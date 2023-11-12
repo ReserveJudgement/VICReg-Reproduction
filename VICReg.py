@@ -343,15 +343,15 @@ if __name__ == '__main__':
     LinearProbe(model, train, test, 100)
 
     # Load embeddings
-    images = test.data
+    images = train.data
     enc = get_representations(images, model)
 
     # Retrieve 5 nearest neighbors from random images in each class
     knn, _ = FindNeighbors(enc, enc, 5)
-    retrieval(test, knn)
+    retrieval(train, knn)
 
     # Clustering task
-    labels = test.targets
+    labels = train.targets
     enc = enc.cpu().detach().numpy()
     predict = cluster(enc, labels, 10)
   
