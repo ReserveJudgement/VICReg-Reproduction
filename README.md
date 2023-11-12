@@ -34,7 +34,7 @@ Conclusion: VICReg encoding significantly improves classification accuracy, even
 
 # Results - image retrieval
 
-Test set is encoded with the trained VICReg model, a random image is selected from each class, and then 5 nearest neighbors are retrieved (in l2 distance).
+Data is encoded with the trained VICReg model, a random image is selected from each class, and then 5 nearest neighbors are retrieved (in l2 distance).
 
 ![image](https://github.com/ReserveJudgement/VICReg-Reproduction/assets/150562945/2fb2535f-86ed-4eb1-bdfb-c18cf918ffe3)
 
@@ -42,9 +42,9 @@ Conclusion: VICReg encoding manages to embed similar images close by in the embe
 
 # Results - clustering
 
-Again test set is encoded with trained VICReg model, images are clustered into 10 groups, then dimensionality is reduced to 2D using TSNE and visualized.  
-Colors represent different classes from original labels. Black points represent cluster centroids.
+Again data is encoded with trained VICReg model, images are clustered into 10 groups, then dimensionality is reduced to 2D using TSNE and visualized.  
+In graph on left, colors represent different clusters. On right, colors represent original class labels. Black points represent cluster centroids in both.
 
-![image](https://github.com/ReserveJudgement/VICReg-Reproduction/assets/150562945/a4c34c28-0636-47d3-94ed-9f09cdec118f)
+![image](https://github.com/ReserveJudgement/VICReg-Reproduction/assets/150562945/cd0fb962-37bd-4995-bce3-15cccd85a7cd)
 
 Conclusion: VICReg manages to roughly separate out classes without any labels during training.
