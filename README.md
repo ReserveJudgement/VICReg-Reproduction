@@ -1,12 +1,12 @@
 # Introduction
-
-This is an educational project to reproduce VICReg image representation learning paper and evaluate on CIFAR10 dataset.  
-Paper: Adrien Bardes, Jean Ponce, and Yann LeCun. Vicreg: Variance-invariance-covariance regularization for self-supervised learning.
-arXiv preprint arXiv:2105.04906, 2021  
 Self supervised representational learning is an effective paradigm for multiple downstream tasks.  
 Contrastive learning between images and random augmentations is a strong method for such representation learning over visual data.  
 The key challenge in contrastive learning is preventing collapse to the trivial solution of an identical encoding for all samples during training.  
-VICReg accomplishes this by introducing both variance and covariance losses, as measured over the mini-batch (seep paper for details).  
+VICReg accomplishes this by introducing both variance and covariance losses, as measured over the mini-batch (see paper for details).  
+This is an educational project to reproduce VICReg image representation learning paper and evaluate on CIFAR10 dataset.  
+Paper: Adrien Bardes, Jean Ponce, and Yann LeCun. Vicreg: Variance-invariance-covariance regularization for self-supervised learning.
+arXiv preprint arXiv:2105.04906, 2021  
+
 
 # Overview of tasks
 
