@@ -30,7 +30,7 @@ Baselines:
 - Linear probe over an ablated VICReg encoder trained without the variance loss. Accuracy: 0.1437.
 - Random baseline is 0.1 (10 classes).
   
-Conclusion: VICReg encoding significantly improves classification accuracy, even though it is trained in self-supervised fashion without labels.
+Conclusion: VICReg encoding dramatically improves classification accuracy, even though it is trained in self-supervised fashion without labels.
 
 # Results - image retrieval
 
